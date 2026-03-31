@@ -34,7 +34,11 @@ class main:
         
         
     def show(self):
-        
+        guess = self.entry.get()
+        if guess == self.random:
+            self.label.config(text="you win")
+        else:
+            self.label.config(text="you loose")
     
 if __name__ == "__main__":
     root = tk.Tk()
