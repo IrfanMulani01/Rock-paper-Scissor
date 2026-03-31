@@ -20,6 +20,14 @@ class main:
         self.entry = tk.Entry(root, width=30)
         self.entry.pack()
         
+        # setting random in rock paper scissor wth help of chioce
+        choise = ['rock', 'paper', 'scissor']
+        self.random = random.choice(choise)
+        
+        # set label to show the rock, paper or scissor
+        self.label1 = tk.Label(root, text="Your choice is ")
+        self.label1.pack()
+        
 if __name__ == "__main__":
     root = tk.Tk()
     obj = main(root)
