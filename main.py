@@ -9,4 +9,6 @@ class main:
         # set title to the window
         self.root.title(text="Game of Rock Paper Scissor")
         
+        # set diamentions to window
+        self.root.geometry("700x500")
         
