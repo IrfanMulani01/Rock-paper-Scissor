@@ -38,7 +38,14 @@ class main:
         if guess not in self.choise:
             self.label1.config(text="You entered value is invalid")
             return
-       
+        if guess == self.random:
+            result = "Game Tie!"
+        elif guess == "paper" and self.random == "rock" or guess == "scissor" and self.random == "paper" or guess == "rock" and self.random == "scissor":
+            self.label1.config(text=guess)
+            result = "You Win"
+        else:
+            result = "You lose!"
+        
         
 if __name__ == "__main__":
     root = tk.Tk()
