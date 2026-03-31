@@ -21,11 +21,11 @@ class main:
         self.entry.pack()
         
         # setting random in rock paper scissor wth help of chioce
-        choise = ['rock', 'paper', 'scissor']
-        self.random = random.choice(choise)
+        self.choise = ['rock', 'paper', 'scissor']
+        self.random = random.choice(self.choise)
         
         #set button
-        self.button = tk.Button(root, text="Submit", command=self.show())
+        self.button = tk.Button(root, text="Submit", command=self.show)
         self.button.pack()
         
         # set label to show the rock, paper or scissor
@@ -34,12 +34,12 @@ class main:
         
         
     def show(self):
-        guess = self.entry.get()
-        if guess == self.random:
-            self.label.config(text="you win")
-        else:
-            self.label.config(text="you loose")
-    
+        guess = self.entry.get().lower()
+        if guess not in self.choise:
+            self.label1.config(text="You entered value is invalid")
+            return
+       
+        
 if __name__ == "__main__":
     root = tk.Tk()
     obj = main(root)
