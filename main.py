@@ -46,6 +46,9 @@ class main:
         else:
             result = "You lose!"
         
+        self.label1.config(
+            text=f"You chose: {guess} | Computer chose: {self.random} → {result}"
+        )
         
 if __name__ == "__main__":
     root = tk.Tk()
