@@ -13,8 +13,12 @@ class main:
         self.root.geometry("700x500")
         
         #set label
-        self.label = tk.Label(text="Enter Options")
+        self.label = tk.Label(root, text="Enter Options")
         self.label.pack()
+        
+        # set entry 
+        self.entry = tk.Entry(root, width=30)
+        self.entry.pack()
         
 if __name__ == "__main__":
     root = tk.Tk()
