@@ -24,10 +24,18 @@ class main:
         choise = ['rock', 'paper', 'scissor']
         self.random = random.choice(choise)
         
+        #set button
+        self.button = tk.Button(root, text="Submit", command=self.show())
+        self.button.pack()
+        
         # set label to show the rock, paper or scissor
         self.label1 = tk.Label(root, text="Your choice is ")
         self.label1.pack()
         
+        
+    def show(self):
+        
+    
 if __name__ == "__main__":
     root = tk.Tk()
     obj = main(root)
