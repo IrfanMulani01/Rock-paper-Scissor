@@ -7,8 +7,16 @@ class main:
         self.root = root
         
         # set title to the window
-        self.root.title(text="Game of Rock Paper Scissor")
+        self.root.title("Game of Rock Paper Scissor")
         
         # set diamentions to window
         self.root.geometry("700x500")
         
+        #set label
+        self.label = tk.Label(text="Enter Options")
+        self.label.pack()
+        
+if __name__ == "__main__":
+    root = tk.Tk()
+    obj = main(root)
+    root.mainloop()
