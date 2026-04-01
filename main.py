@@ -4,6 +4,7 @@ import random
 
 class main:
     def __init__(self, root):
+        
         self.root = root
         
         # set title to the window
@@ -51,6 +52,6 @@ class main:
         )
         
 if __name__ == "__main__":
-    root = tk.Tk()
+    root = Tk()
     obj = main(root)
     root.mainloop()
