@@ -14,12 +14,14 @@ class main:
         self.root.geometry("700x500")
         
         #set label
-        self.label = tk.Label(root, text="Enter Options")
+        self.label = tk.Label(root, text="Enter Options:", font=30)
         self.label.pack()
+        self.label.place(x=10,y=20, height=50, width=200)
         
         # set entry 
         self.entry = tk.Entry(root, width=30)
         self.entry.pack()
+        self.entry.place(x=250, y=20, height=50, width=400)
         
         # setting random in rock paper scissor wth help of chioce
         self.choise = ['rock', 'paper', 'scissor']
@@ -28,10 +30,12 @@ class main:
         #set button
         self.button = tk.Button(root, text="Submit", command=self.show)
         self.button.pack()
+        self.button.place(x=280, y=100, height=50, width=100)
         
         # set label to show the rock, paper or scissor
         self.label1 = tk.Label(root, text="Your choice is ")
         self.label1.pack()
+        self.label1.place(x=100,y=180, height=100, width=500)
         
         
     def show(self):
